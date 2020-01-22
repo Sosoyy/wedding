@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>欢迎参加杨祖林和胡媛媛的在线婚礼</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="favicon.ico?v=1" type="image/x-icon" />
+    <style>
+    .icon-img {
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+    }</style>
+</head>
+
+<body style="background: #94ab72;">
+    <img class="icon-img" src="./images/icon.png">
+
+    <div id="main" style="display: none;">
+        <div id="bg-loading" class="bg">
+            <div id="bg-loading-content">
+                <div id="loading-text">
+                    <span id="loading-text-content">新郎新娘刷牙中</span><span id="loading-dots">...</span>
+                </div>
+                <div id="loading-process">
+                    <div id="loading-process-content"></div>
+                </div>
+                <div id="loading-text-percent">0%</div>
+            </div>
+            <div id="bg-loading-tip">带上耳机体验更佳</div>
+        </div>
+
+        <div id="bg-envelope" class="bg">
+            <div id="envelope-back" class="envelope-top envelope-animate"></div>
+            <img id="envelope-hat-opened" class="envelope-animate" src="./images/envelope-hat-opened.png">
+            <img id="envelope-paper" class="envelope-top" src="./images/envelope-paper.png">
+            <div id="envelope-with-name" class="envelope-top">
+                <img id="envelope-paper-name" src="./images/envelope-paper-name.png">
+                <div id="envelope-invitee"></div>
+            </div>
+            <img id="envelope-front" class="envelope-top envelope-animate" src="./images/envelope-front.png">
+            <img id="envelope-hat" class="envelope-top" src="./images/envelope-hat.png">
+
+            <div id="btn-enter" class="btn"></div>
+
+            <div class="top-btn btn-audio"></div>
+        </div>
+
+        <div id="bg-main" class="bg">
+            <div id="cloud-1" class="cloud"></div>
+            <div id="cloud-2" class="cloud"></div>
+            <div id="cloud-3" class="cloud"></div>
+            <div id="cloud-4" class="cloud"></div>
+            <div id="arch"></div>
+            <img id="couple" src="./images/couple.png">
+            <div id="btn-flower" class="btn"></div>
+            <img id="flower">
+            <div id="flowers">
+                <img src="./images/flower-1.png" style="bottom: .8rem; left: 1rem;">
+                <img src="./images/flower-2.png" style="bottom: 1.8rem; left: 2.5rem;">
+                <img src="./images/flower-1.png" style="bottom: 1rem; left: 4rem;">
+                <img src="./images/flower-2.png" style="bottom: 3.7rem; left: 2rem;">
+
+                <img src="./images/flower-1.png" style="bottom: 3.4rem; left: 6.9rem;">
+                <img src="./images/flower-1.png" style="bottom: 1.8rem; left: 5rem;">
+                <img src="./images/flower-3.png" style="bottom: 4.1rem; left: 3rem;">
+                <img src="./images/flower-4.png" style="bottom: .3rem; left: 6.2rem;">
+
+                <img src="./images/flower-1.png" style="bottom: 1.7rem; left: 3.2rem;">
+                <img src="./images/flower-2.png" style="bottom: 2.1rem; left: 7.5rem;">
+                <img src="./images/flower-1.png" style="bottom: 3.9rem; left: 1rem;">
+                <img src="./images/flower-4.png" style="bottom: 3.5rem; left: 5rem;">
+
+                <img src="./images/flower-1.png" style="bottom: .1rem; left: 8.5rem;">
+                <img src="./images/flower-2.png" style="bottom: .2rem; left: 2.8rem;">
+                <img src="./images/flower-3.png" style="bottom: 2.6rem; left: .6rem;">
+                <img src="./images/flower-1.png" style="bottom: 4.1rem; left: 6rem;">
+
+                <img src="./images/flower-1.png" style="bottom: 1.8rem; left: 6.3rem;">
+                <img src="./images/flower-2.png" style="bottom: .09rem; left: 4.4rem;">
+                <img src="./images/flower-1.png" style="bottom: 3.2rem; left: 2rem;">
+                <img src="./images/flower-1.png" style="bottom: .7rem; left: 7.4rem;">
+
+                <img src="./images/flower-1.png" style="bottom: 3.8rem; left: 3.9rem;">
+                <img src="./images/flower-1.png" style="bottom: .4rem; left: 2rem;">
+                <img src="./images/flower-3.png" style="bottom: .2rem; left: 0rem;">
+                <img src="./images/flower-4.png" style="bottom: 1.7rem; left: 8.5rem;">
+
+                <img src="./images/flower-1.png" style="bottom: .8rem; left: 5.2rem;">
+                <img src="./images/flower-1.png" style="bottom: 4rem; left: 7.8rem;">
+                <img src="./images/flower-1.png" style="bottom: 2.7rem; left: 6rem;">
+                <img src="./images/flower-4.png" style="bottom: 1.8rem; left: 1.5rem;">
+
+                <img src="./images/flower-1.png" style="bottom: 2.5rem; left: 4.1rem;">
+                <img src="./images/flower-2.png" style="bottom: 1.6rem; left: 4.7rem;">
+                <img src="./images/flower-1.png" style="bottom: 2.8rem; left: 8rem;">
+                <img src="./images/flower-1.png" style="bottom: 1.8rem; left: .1rem;">
+            </div>
+
+            <div id="countdown-1" class="countdown"></div>
+            <div id="countdown-2" class="countdown"></div>
+            <div id="countdown-3" class="countdown"></div>
+
+            <div class="top-btn btn-audio"></div>
+        </div>
+
+        <div id="bg-photo" class="bg">
+            <div id="photo-panel">
+                <div id="photo" class="photo">
+                    <div id="photo-content" class="content">
+                        <img src="./images/photo-content.png" class="content-bg">
+                        <img src="./images/couple.png" class="photo-couple">
+                        <div id="photo-mask" class="photo-mask"></div>
+                    </div>
+                    <div class="text">
+                        <p>我于 <span id="photo-time"></span> 参加了</p>
+                        <p>杨祖林与胡媛媛的在线婚礼</p>
+                    </div>
+                </div>
+            </div>
+            <div id="photo-control">
+                <a href="https://www.hunliji.com/p/wedding/Public/wap/invitationCard/demonew.html?card_id=MTAzMTg2NTdmaXJlX2Nsb3Vk&appName=weddingUser&with_myb=1" target="_blank" id="photo-link">去看婚纱照</a>
+                <div class="split"></div>
+            </div>
+        </div>
+
+        <div id="bg-dressing" class="bg">
+            <div id="model" class="model">
+                <img class="body" src="./images/model-body.png">
+                <img class="hair" src="./images/hair-1.png">
+                <img class="eyes" src="./images/eyes-1.png">
+                <img class="mouth" src="./images/mouth-1.png">
+                <img class="pants" src="./images/pants-1.png">
+                <img class="clothes" src="./images/clothes-1.png">
+            </div>
+            <ul id="part-list" class="part-list">
+                <li class="hair active" data-name="hair"></li>
+                <li class="eyes" data-name="eyes"></li>
+                <li class="mouth" data-name="mouth"></li>
+                <li class="clothes" data-name="clothes"></li>
+                <li class="pants" data-name="pants"></li>
+            </ul>
+            <div id="btn-photo" class="btn"></div>
+            <div class="item-section">
+                <ul id="item-list" class="item-list"></ul>
+            </div>
+        </div>
+
+        <div id="mask"></div>
+
+        <div id="dialog-flower" class="dialog">
+            <ul>
+                <li data-id="1" class="active">
+                    <div>
+                        <img class="legend" src="./images/flower-1.png">
+                        <div class="name"></div>
+                    </div>
+                </li>
+                <li data-id="2">
+                    <div>
+                        <img class="legend" src="./images/flower-2.png">
+                        <div class="name"></div>
+                    </div>
+                </li>
+                <li data-id="3">
+                    <div>
+                        <img class="legend" src="./images/flower-3.png">
+                        <div class="name"></div>
+                    </div>
+                </li>
+                <li data-id="4">
+                    <div>
+                        <img class="legend" src="./images/flower-4.png">
+                        <div class="name"></div>
+                    </div>
+                </li>
+            </ul>
+            <div id="btn-flower-ok" class="btn"></div>
+        </div>
+
+        <div id="dialog-candy" class="dialog">
+            <img class="candy" src="./images/candy.png">
+            <div id="btn-dressing" class="btn"></div>
+        </div>
+
+        <div id="flash"></div>
+    </div>
+
+    <script src="./images/index.js"></script>
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?2db0eaa938a47c0517b5d408d4165198";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+</html>
